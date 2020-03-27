@@ -35,7 +35,7 @@ $(document).ready(function(){
                     let day = new Date().getDate() +"/ "+ new Date().getMonth() +"/ "+new Date().getFullYear();
 
                     button.addEventListener("click", function() {
-                        alert("arach");
+                        alert("The book was added to your card!");
                         let row = document.createElement("div");
                         row.classList.add("row");
                         row.style.borderTop= "1px solid #CACCD5";
@@ -44,7 +44,6 @@ $(document).ready(function(){
                         coldiv0.classList.add("col-md-3");
                         coldiv0.innerHTML="";
                         coldiv0.append(response.items[i].volumeInfo.title);
-                        // console.log(title.value);
                         let coldiv1= document.createElement("div");
                         coldiv1.classList.add("col-md-3");
                         coldiv1.style.fontSize = "15px";
