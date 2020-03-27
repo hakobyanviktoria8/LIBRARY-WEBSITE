@@ -232,3 +232,8 @@ bookSearch.onclick = function () {
 logo.onclick = function () {
     location.reload()
 };
+
+//
+myLibCard.onclick =function () {
+    card.style.display = "none"
+};

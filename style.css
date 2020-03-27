@@ -125,3 +125,12 @@ caption{
 #exampleModalLabel{
     margin-left: 30%;
 }
+
+.addToCard{
+    position: absolute;
+    top: 32px;
+    width: 135px;
+    height: 50px;
+    background-color: #dddada;
+    display: none;
+}

@@ -8,7 +8,6 @@
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <title>Library</title>
     <link rel="stylesheet" href="style.css">
-
 </head>
 <body>
 <div class="container">
@@ -373,12 +372,27 @@
                 </button>
             </div>
             <div class="modal-body">
-                <div class="container-fluid">
+                <div class="container-fluid" id="modalCard">
                     <div class="row">
                         <div class="col-md-3" id="bookTitle">Book Title</div>
                         <div class="col-md-3" id="takeTime">Take time</div>
-                        <div class="col-md-3" id="returnTime">Return time</div>
-                        <div class="col-md-3" id="myOpinion">My opinion</div>
+                        <div class="col-md-3" id="returnTime">
+                            <select id="returnT">
+                                <option selected>Return time</option>
+                                <option value="1month">1 month</option>
+                                <option value="2month">2 month</option>
+                                <option value="3month">3 month</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3" id="myOpinion">
+                            <select id="opinion">
+                                <option selected>My opinion</option>
+                                <option value="bad">Bad</option>
+                                <option value="normal">Normal</option>
+                                <option value="good">Good</option>
+                                <option value="excellent">Excellent</option>
+                            </select>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -398,6 +412,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
 <!--Library search-->
 <script src="myscript.js"></script>
+
 
 </body>
 </html>
